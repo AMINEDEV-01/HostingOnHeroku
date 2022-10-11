@@ -32,9 +32,9 @@ class UserController extends Controller
 
     /**
      * List User 
-     * @param Nill
+     * @param NUll
      * @return Array $user
-     * @author Shani Singh
+     * @author AMINE ELMANSOURI
      */
     public function index()
     {
@@ -44,9 +44,9 @@ class UserController extends Controller
     
     /**
      * Create User 
-     * @param Nill
+     * @param NULL
      * @return Array $user
-     * @author Shani Singh
+     * @author AMINE ELMANSOURI
      */
     public function create()
     {
@@ -59,7 +59,7 @@ class UserController extends Controller
      * Store User
      * @param Request $request
      * @return View Users
-     * @author Shani Singh
+     * @author AMINE ELMANSOURI
      */
     public function store(Request $request)
     {
@@ -84,8 +84,9 @@ class UserController extends Controller
                 'mobile_number' => $request->mobile_number,
                 'role_id'       => $request->role_id,
                 'status'        => $request->status,
-                'password'      => Hash::make($request->first_name.'@'.$request->mobile_number)
+                'password'      => Hash::make($request->last_name.''.$request->mobile_number)
             ]);
+            // 'password'      => Hash::make($request->first_name.'@'.$request->mobile_number)
 
             // Delete Any Existing Role
             DB::table('model_has_roles')->where('model_id',$user->id)->delete();
@@ -108,7 +109,7 @@ class UserController extends Controller
      * Update Status Of User
      * @param Integer $status
      * @return List Page With Success
-     * @author Shani Singh
+     * @author AMINE ELMANSOURI
      */
     public function updateStatus($user_id, $status)
     {
@@ -147,7 +148,7 @@ class UserController extends Controller
      * Edit User
      * @param Integer $user
      * @return Collection $user
-     * @author Shani Singh
+     * @author AMINE ELMANSOURI
      */
     public function edit(User $user)
     {
@@ -162,7 +163,7 @@ class UserController extends Controller
      * Update User
      * @param Request $request, User $user
      * @return View Users
-     * @author Shani Singh
+     * @author AMINE ELMANSOURI
      */
     public function update(Request $request, User $user)
     {
@@ -210,7 +211,7 @@ class UserController extends Controller
      * Delete User
      * @param User $user
      * @return Index Users
-     * @author Shani Singh
+     * @author AMINE ELMANSOURI
      */
     public function delete(User $user)
     {

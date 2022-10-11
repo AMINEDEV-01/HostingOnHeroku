@@ -17,7 +17,7 @@
         <div class="row">
             <div class="col-md-3 border-right">
                 <div class="d-flex flex-column align-items-center text-center p-3 py-5">
-                    <img class="rounded-circle mt-5" width="150px" src="{{ asset('admin/img/undraw_profile.svg') }}">
+                    <img class="rounded-circle mt-5" width="150px" src="{{ asset('admin/img/bsi.9ddcf2712cd35c8a6e8c9b62a6a120fa.svg') }}">
                     <span class="font-weight-bold">{{ auth()->user()->full_name }}</span>
                     <span class="text-black-50"><i>Role:
                             {{ auth()->user()->roles
@@ -116,4 +116,5 @@
 
 
     </div>
+@include('common.footer')
 @endsection

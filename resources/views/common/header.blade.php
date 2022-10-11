@@ -26,9 +26,9 @@
         <li class="nav-item dropdown no-arrow">
             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">{{Auth::user()->first_name.' '.Auth::user()->last_name}}</span>
                 <img class="img-profile rounded-circle"
-                    src="{{asset('admin/img/undraw_profile.svg')}}">
+                    src="{{asset('admin/img/bsi.9ddcf2712cd35c8a6e8c9b62a6a120fa.svg')}}">
             </a>
             <!-- Dropdown - User Information -->
             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"

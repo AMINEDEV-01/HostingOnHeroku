@@ -62,7 +62,7 @@
 
                     {{-- Email --}}
                     <div class="col-sm-6 mb-3 mt-3 mb-sm-0">
-                        <span style="color:red;">*</span>Email</label>
+                        <span style="color:red;">*</span>Login</label>
                         <input 
                             type="email" 
                             class="form-control form-control-user @error('email') is-invalid @enderror" 
@@ -134,5 +134,5 @@
 
 </div>
 
-
+@include('common.footer')
 @endsection

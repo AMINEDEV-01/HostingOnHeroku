@@ -31,7 +31,7 @@
             <!-- End of Main Content -->
 
             <!-- Footer -->
-            @include('common.footer')
+            <!-- @include('common.footer') -->
             <!-- End of Footer -->
 
         </div>

@@ -40,7 +40,7 @@
                             <tr>
                                 <th width="20%">Name</th>
                                 <th width="25%">Email</th>
-                                <th width="15%">Mobile</th>
+                                <th width="15%">Login</th>
                                 <th width="15%">Role</th>
                                 <th width="15%">Status</th>
                                 <th width="10%">Action</th>
@@ -93,7 +93,7 @@
     </div>
 
     @include('users.delete-modal')
-
+    @include('common.footer')
 @endsection
 
 @section('scripts')

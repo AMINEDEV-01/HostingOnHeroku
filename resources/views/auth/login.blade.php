@@ -1,4 +1,4 @@
-@extends('auth.layouts.app')
+@extends('auth.layouts.app2')
 
 @section('title', 'Login')
 
@@ -6,7 +6,8 @@
 <div class="row justify-content-center">
 
     <div class="text-center mt-5">
-        <h1 class="text-white">Tech-Admin - Laravel Admin Panel</h1>
+        <h1 class="text-white">Espace de gestion de trésorerie de</h1>
+        <h1 class="text-white"><span class="kw" translate="no"><span style="color:blue">B</span><span style="color:red">S</span><span style="color:blue">I</span><span style="color:white">TEAM</span></span></h1>
     </div>
 
     <div class="col-xl-10 col-lg-12 col-md-9">
@@ -18,7 +19,7 @@
                     <div class="col-lg-6">
                         <div class="p-5">
                             <div class="text-center">
-                                <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
+                                <h1 class="h4 text-gray-900 mb-4">Content de te revoir!</h1>
                             </div>
 
                             @if (session('error'))
@@ -49,17 +50,16 @@
                                     <div class="custom-control custom-checkbox small">
                                         <input class="custom-control-input" type="checkbox" name="remember" id="customCheck" {{ old('remember') ? 'checked' : '' }}>
 
-                                        <label class="custom-control-label" for="customCheck">Remember
-                                            Me</label>
+                                        <label class="custom-control-label" for="customCheck">se rappeler de moi</label>
                                     </div>
                                 </div>
                                 <button class="btn btn-primary btn-user btn-block">
-                                    Login
+                                se connecter
                                 </button>
                             </form>
                             <hr>
                             <div class="text-center">
-                                <a class="small" href="{{route('password.request')}}">Forgot Password?</a>
+                                <a class="small" href="{{route('password.request')}}">Mot de passe oublié?</a>
                             </div>
                         </div>
                     </div>
@@ -69,7 +69,7 @@
     </div>
     
     <div class="text-center mt-5">
-        <h6 class="text-white">Developed By : <a class="text-white" href="https://techtoolindia.com">TechTool India</a></h6>
+        <h6 class="text-white">Développé par : <a class="text-white" href="https://www.linkedin.com/in/amine-elmansouri-61105b195/">AMINE ELMANSOURI</a></h6>
     </div>
 
 </div>

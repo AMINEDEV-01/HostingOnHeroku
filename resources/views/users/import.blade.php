@@ -56,5 +56,5 @@
 
 </div>
 
-
+@include('common.footer')
 @endsection
