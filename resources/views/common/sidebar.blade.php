@@ -2,10 +2,11 @@
 
     <!-- Sidebar - Brand -->
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="">
-        <div class="sidebar-brand-icon rotate-n-15">
-            <i class="fas fa-university"></i>
+        <div class="sidebar-brand-icon">
+        <img class="img-profile rounded-circle"
+                    src="{{asset('admin/img/logo-504x300_0_anef.jpg')}}" width="80px;">
         </div>
-        <div class="sidebar-brand-text mx-3">TRESORERIE BSITEAM</div>
+        <div class="sidebar-brand-text mx-3">Eaux et Forets</div>
     </a>
 
     <!-- Divider -->
@@ -22,109 +23,44 @@
     
         <!-- Divider -->
         <hr class="sidebar-divider d-none d-md-block">
-        <!-- Nav Item - Pages Collapse Menu -->
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#taTpDropDown12"
-                aria-expanded="true" aria-controls="taTpDropDown12">
-                <i class="fa fa-line-chart" aria-hidden="true"></i>
-                <span>Statistiques</span>
-            </a>
-            <div id="taTpDropDown12" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                <div class="bg-white py-2 collapse-inner rounded">
-                    <h6 class="collapse-header">Statistiques:</h6>
-                    <a class="collapse-item" href="{{ route('achats.charts') }}">Débit/Crédit</a>
-                    <!-- <a class="collapse-item" href="{{ route('bancaires.charts') }}"></a> -->
-                    
-                </div>
-            </div>
-        </li>
-        <!-- Nav Item - Pages Collapse Menu -->
-        <div class="sidebar-heading">
-            Réglement bancaires
-        </div>
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#taTpDropDown44"
-                aria-expanded="true" aria-controls="taTpDropDown44">
-                <i class="fa fa-university" aria-hidden="true"></i>
-                <span>Débit</span>
-            </a>
-            <div id="taTpDropDown44" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                <div class="bg-white py-2 collapse-inner rounded">
-                    <h6 class="collapse-header">Crédit:</h6>
-                    <a class="collapse-item" href="{{ route('achats.index') }}">Liste</a>
-                    <a class="collapse-item" href="{{ route('achats.create') }}">Ajouter un nouveau</a>
-                    <a class="collapse-item" href="{{ route('achats.import') }}">Importer des données</a>
-                </div>
-            </div>
-        </li>
-    
+       
+
+
+        <!--  -->
+
         <!-- Heading -->
         <div class="sidebar-heading">
-            Réglement d'achats
+            Foret
         </div>
 
         <!-- Nav Item - Pages Collapse Menu -->
         <li class="nav-item">
-            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#taTpDropDown11"
-                aria-expanded="true" aria-controls="taTpDropDown11">
-                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                <span>Crédit</span>
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#taTpDropDown7777"
+                aria-expanded="true" aria-controls="taTpDropDown7777">
+                <i class="fa fa-fw fa-tree" aria-hidden="true"></i>
+                <span>Foret</span>
             </a>
-            <div id="taTpDropDown11" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div id="taTpDropDown7777" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <h6 class="collapse-header">Débit:</h6>
-                    <a class="collapse-item" href="{{ route('bancaires.index') }}">Liste</a>
-                    <a class="collapse-item" href="{{ route('bancaires.create') }}">Ajouter un nouveau</a>
-                    <a class="collapse-item" href="{{ route('bancaires.import') }}">Importer des données</a>
+                    <h6 class="collapse-header">Foret:</h6>
+                    <a class="collapse-item" href="{{ route('forets.index') }}">Liste</a>
+                    <a class="collapse-item" href="{{ route('forets.create') }}">Ajouter un nouveau</a>
+                    <a class="collapse-item" href="{{ route('forets.import') }}">Importer des données</a>
                 </div>
             </div>
         </li>
         
-
-        <div class="sidebar-heading">
-            fournisseurs-clients
-        </div>
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#taTpDropDown88"
-                aria-expanded="true" aria-controls="taTpDropDown88">
-                <i class="fas fa-user-alt"></i>
-                <span>fournisseurs</span>
-            </a>
-            <div id="taTpDropDown88" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                <div class="bg-white py-2 collapse-inner rounded">
-                    <h6 class="collapse-header">fournisseurs:</h6>
-                    <a class="collapse-item" href="{{ route('fournisseurs.index') }}">Liste</a>
-                    <a class="collapse-item" href="{{ route('fournisseurs.create') }}">Ajouter un nouveau</a>
-                    <!-- <a class="collapse-item" href="{{ route('fournisseurs.import') }}">Importer des données</a> -->
-                </div>
-            </div>
-        </li>
-        <!-- Divider -->
-        <hr class="sidebar-divider my-0">
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#taTpDropDown30"
-                aria-expanded="true" aria-controls="taTpDropDown30">
-                <i class="fas fa-user-alt"></i>
-                <span>clients</span>
-            </a>
-            <div id="taTpDropDown30" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                <div class="bg-white py-2 collapse-inner rounded">
-                    <h6 class="collapse-header">clients:</h6>
-                    <a class="collapse-item" href="{{ route('clients.index') }}">Liste</a>
-                    <a class="collapse-item" href="{{ route('clients.create') }}">Ajouter un nouveau</a>
-                    <!-- <a class="collapse-item" href="{{ route('clients.import') }}">Importer des données</a> -->
-                </div>
-            </div>
-        </li>
-
+<!--  -->
         
+
+        @hasrole('Admin')
         <hr class="sidebar-divider">
 
             <!-- Heading -->
             <div class="sidebar-heading">
                 Gestion
             </div>
-
+            
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#taTpDropDown"
@@ -143,30 +79,9 @@
             </li>
     
     <!-- Divider -->
-    <hr class="sidebar-divider">
-
-    @hasrole('Admin')
-        <!-- Heading -->
-        <div class="sidebar-heading">
-            Section D'administration
-        </div>
-
-        <!-- Nav Item - Pages Collapse Menu -->
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
-                aria-expanded="true" aria-controls="collapsePages">
-                <i class="fas fa-fw fa-folder"></i>
-                <span>Maître</span>
-            </a>
-            <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-                <div class="bg-white py-2 collapse-inner rounded">
-                    <h6 class="collapse-header">Role & Permissions</h6>
-                    <a class="collapse-item" href="{{ route('roles.index') }}">Roles</a>
-                    <a class="collapse-item" href="{{ route('permissions.index') }}">Permissions</a>
-                </div>
-            </div>
-        </li>
-        @endhasrole
+    
+    @endhasrole
+   
 
 
 

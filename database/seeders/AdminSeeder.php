@@ -20,10 +20,18 @@ class AdminSeeder extends Seeder
         $user = User::create([
             'first_name'    => 'Super',
             'last_name'     => 'Admin',
-            'email'         =>  'admin@admin.com',
-            'mobile_number' =>  '9028187696',
-            'password'      =>  Hash::make('Admin@123#'),
+            'email'         =>  'admin@anef.com',
+            'mobile_number' =>  '0611111111',
+            'password'      =>  Hash::make('admin.seaf@2023'),
             'role_id'       => 1
+        ]);
+        $user2 = User::create([
+            'first_name'    => 'Utilisateur',
+            'last_name'     => 'ANEF',
+            'email'         =>  'utilisateur@anef.com',
+            'mobile_number' =>  '0622222222',
+            'password'      =>  Hash::make('seaf.2023'),
+            'role_id'       => 2
         ]);
     }
 }

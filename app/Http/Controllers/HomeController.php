@@ -29,46 +29,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-    //   
-        // $query=DB::table('achats');
-        // $query->addSelect(DB::raw("SUM(montant_regle) as montant"));
-        // $query->whereDate(DB::raw("STR_TO_DATE(date_echeance, '%d/%m/%Y')"),'>=',Carbon::now()->startOfYear());
-        // $query->whereDate(DB::raw("STR_TO_DATE(date_echeance, '%d/%m/%Y')"),'<=',Carbon::now()->endOfYear());
-        // $query->where('status',1);
-        // $data2=$query->get();
-        
 
-        
-        
-      
-        // $montant =[];
 
-        // foreach($data2 as $entry){
-        //     $montant[$entry->montant]=(double)$entry->montant;
-        // }
-        // $montant=array_values($montant);
-        
-        // foreach($montant as $month => $name){
-        //         if(!array_key_exists($month,$montant)){
-        //             $montant[$month]=0;
-        //         }
-                
-        //     }
-        // ksort($montant);
-        
-        // dd($data1);
-       
-        $fournisseurs =DB::table('fournisseurs')->get();
-        $clients =DB::table('clients')->get();
-
-    // 
-        $tomorrow =Carbon::now()->tomorrow('Africa/Casablanca')->format('d/m/Y');
-        // Carbon::tomorrow()->format('d/m/Y');
-        // 'nr_de_reglement','date','mode','reference','date_echeance','montant_regle','code_fournisseur'
-        $reg=DB::table('achats')->where('date_echeance','=',$tomorrow)->get();
-        $regbancaire=DB::table('bancaires')->where('date_echeance','=',$tomorrow)->get();
-
-        return view('home', ['reg' => $reg , 'regbancaire' => $regbancaire,'fournisseurs' =>$fournisseurs,'clients' => $clients]);
+        return view('home');
     }
 
     /**

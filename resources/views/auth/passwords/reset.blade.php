@@ -74,9 +74,7 @@
 
         </div>
 
-        <div class="text-center mt-5">
-            <h6 class="text-white">Developed By : <a class="text-white" href="">AMINE ELMANSOURI</a></h6>
-        </div>
+        
 
     </div>
 @endsection

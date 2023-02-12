@@ -12,7 +12,7 @@
     <title>{{ config('app.name', 'Laravel') }} | @yield('title')</title>
 
     {{-- ICON --}}
-    <link rel="shortcut icon" type="image/jpg" href="{{ asset('admin/img/bsi2.d1ee87a20d6a9256d28bec0abc6ae273.svg') }}"/>
+    <link rel="shortcut icon" type="image/jpg" href="{{ asset('admin/img/anef-logo-A828BAA913-seeklogo.com.png') }}"/>
 
     <!-- Font Awesome UI KIT-->
     <script src="https://kit.fontawesome.com/f75ab26951.js" crossorigin="anonymous"></script>

@@ -9,13 +9,7 @@
     <form
         class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
         <div class="input-group">
-            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
-                aria-label="Search" aria-describedby="basic-addon2">
-            <div class="input-group-append">
-                <button class="btn btn-primary" type="button">
-                    <i class="fas fa-search fa-sm"></i>
-                </button>
-            </div>
+          <h1 class="h4 mb-0 text-gray-800">Agence Nationale des Eaux et Forêts</h1>
         </div>
     </form>
 
@@ -28,7 +22,7 @@
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">{{Auth::user()->first_name.' '.Auth::user()->last_name}}</span>
                 <img class="img-profile rounded-circle"
-                    src="{{asset('admin/img/bsi.9ddcf2712cd35c8a6e8c9b62a6a120fa.svg')}}">
+                    src="{{asset('admin/img/anef-logo-A828BAA913-seeklogo.com.png')}}">
             </a>
             <!-- Dropdown - User Information -->
             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"

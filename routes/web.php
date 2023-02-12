@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ForetController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\AchatController;
@@ -8,6 +9,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BancaireController;
 use App\Http\Controllers\FournisseurController;
 use App\Http\Controllers\ClientController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -154,4 +156,26 @@ Route::middleware('auth')->prefix('clients')->name('clients.')->group(function()
    
 
 });
+
+
+
+//Routes Forets
+
+
+Route::middleware('auth')->prefix('forets')->name('forets.')->group(function(){
+    Route::get('/', [ForetController::class, 'index'])->name('index');
+    Route::get('/create', [ForetController::class, 'create'])->name('create');
+    Route::post('/store', [ForetController::class, 'store'])->name('store');
+    Route::get('/edit/{foret}', [ForetController::class, 'edit'])->name('edit');
+    Route::put('/update/{foret}', [ForetController::class, 'update'])->name('update');
+    Route::delete('/delete/{foret}', [ForetController::class, 'delete'])->name('destroy');
+
+    Route::get('/import-forets', [ForetController::class, 'importForets'])->name('import');
+    Route::post('/upload-forets', [ForetController::class, 'uploadForets'])->name('upload');
+
+    Route::get('export/', [ForetController::class, 'export'])->name('export');
+   
+
+});
+
 
